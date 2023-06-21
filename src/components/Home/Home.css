@@ -1,3 +1,6 @@
+.body {
+  background-color: #fbefd3;
+}
 .hero {
   background-image: url("./../../images/cocktail-banner.jpg");
   background-size: cover;

@@ -1,0 +1,13 @@
+.product {
+  background-color: #fbefd3;
+}
+.button {
+  background-color: #fbefd3;
+  border-color: #532a3a;
+  color: #532a3a;
+}
+
+.button:hover {
+  background-color: #532a3a;
+  border-color: #532a3a;
+}

@@ -12,17 +12,41 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
-        { path: "/", element: <Home></Home> },
-        { path: "/home", element: <Home></Home> },
-        { path: "/items", element: <Cocktails></Cocktails> },
+        {
+          path: "/",
+          loader: async () => {
+            return fetch(
+              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
+            );
+          },
+          element: <Home></Home>,
+        },
+        {
+          path: "/home",
+          loader: async () => {
+            return fetch(
+              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
+            );
+          },
+          element: <Home></Home>,
+        },
+        {
+          path: "/items",
+          loader: async () => {
+            return fetch(
+              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
+            );
+          },
+          element: <Cocktails></Cocktails>,
+        },
         { path: "/about", element: <About></About> },
       ],
     },
-    {path:"*", element:<Error></Error>}
+    { path: "*", element: <Error></Error> },
   ]);
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 }

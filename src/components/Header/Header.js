@@ -2,17 +2,18 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "./../../images/logo.png";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="header">
       <Container className="d-flex flex-row-reverse d-md-flex flex-md-row">
         <Navbar.Brand as={Link} to={"/"}>
         <img
               alt=""
               src={logo}
-              width="100"
-              height="100"
+              width="75"
+              height="75"
               className="d-inline-block align-top"
             />
         </Navbar.Brand>
