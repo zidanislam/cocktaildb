@@ -7,7 +7,8 @@
   color: #532a3a;
 }
 
-.button:hover {
-  background-color: #532a3a;
-  border-color: #532a3a;
+.button:hover,
+.button:focus {
+  background-color: #532a3a !important;
+  border-color: #532a3a !important;
 }

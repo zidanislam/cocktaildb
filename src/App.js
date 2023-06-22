@@ -3,6 +3,7 @@ import "./App.css";
 import Main from "./Layout/Main";
 import Error from "./components/404/Error";
 import About from "./components/About/About";
+import CocktailDetail from "./components/CocktailDetail/CocktailDetail";
 import Cocktails from "./components/Cocktails/Cocktails";
 import Home from "./components/Home/Home";
 
@@ -40,6 +41,15 @@ function App() {
           element: <Cocktails></Cocktails>,
         },
         { path: "/about", element: <About></About> },
+        {
+          path: "/item/:idDrink",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.idDrink}`
+            );
+          },
+          element: <CocktailDetail></CocktailDetail>,
+        },
       ],
     },
     { path: "*", element: <Error></Error> },
