@@ -6,7 +6,7 @@ const Cocktails = () => {
   const items = useLoaderData();
   const cocktails = items.drinks;
   return (
-    <div className="d-flex flex-column align-items-center my-5">
+    <div className="d-flex flex-column align-items-center py-5">
       <div className="mb-4">
         <h2>See The Cocktail Collections</h2>
       </div>

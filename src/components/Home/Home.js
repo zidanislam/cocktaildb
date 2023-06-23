@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="body">
+    <div>
       <div>
         <div className="hero d-block w-100" alt="hero">
           <div className="color-overlay d-flex flex-column justify-content-center align-items-start ps-5">
