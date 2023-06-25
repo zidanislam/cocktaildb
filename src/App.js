@@ -15,29 +15,14 @@ function App() {
       children: [
         {
           path: "/",
-          loader: async () => {
-            return fetch(
-              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
-            );
-          },
           element: <Home></Home>,
         },
         {
           path: "/home",
-          loader: async () => {
-            return fetch(
-              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
-            );
-          },
           element: <Home></Home>,
         },
         {
           path: "/items",
-          loader: async () => {
-            return fetch(
-              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
-            );
-          },
           element: <Cocktails></Cocktails>,
         },
         { path: "/about", element: <About></About> },

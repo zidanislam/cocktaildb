@@ -1,5 +1,4 @@
 import React from "react";
-import Cocktails from "../Cocktails/Cocktails";
 import "./Home.css";
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Cocktails></Cocktails>
     </div>
   );
 };
