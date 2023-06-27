@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
-import CocktailList from "../CocktailList/CocktailList";
+import React from "react";
+import useCocktailApi from "../../hooks/useCocktailApi";
+import Cocktail from "../Cocktail/Cocktail";
 
 const Cocktails = () => {
-  const [cocktails, setCocktails] = useState([]);
-  useEffect(() => {
-    fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
-      .then((res) => res.json())
-      .then((data) => setCocktails(data.drinks));
-  }, []);
-  console.log("cocktails",cocktails)
+  const cocktailApi = useCocktailApi();
   return (
-    <div>
-      <CocktailList cocktails={cocktails}/>
-      
+    <div className="d-flex flex-column align-items-center py-5">
+      <div className="mb-4">
+        <h2>See The Cocktail Collections</h2>
+      </div>
+      <div className="row container">
+        {cocktailApi.map((cocktail) => (
+          <Cocktail key={cocktail.idDrink} cocktail={cocktail}></Cocktail>
+        ))}
+      </div>
     </div>
   );
 };

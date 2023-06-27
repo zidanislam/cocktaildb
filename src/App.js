@@ -4,7 +4,7 @@ import Main from "./Layout/Main";
 import Error from "./components/404/Error";
 import About from "./components/About/About";
 import CocktailDetail from "./components/CocktailDetail/CocktailDetail";
-import CocktailList from "./components/Cocktails/Cocktails";
+import Cocktails from "./components/Cocktails/Cocktails";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         },
         {
           path: "/items",
-          element: <CocktailList></CocktailList>,
+          element: <Cocktails></Cocktails>,
         },
         { path: "/about", element: <About></About> },
         {
