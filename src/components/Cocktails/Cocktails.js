@@ -12,7 +12,6 @@ const Cocktails = () => {
   const lastPostIndex = currentPage * postInPage;
   const firstPostIndex = lastPostIndex - postInPage;
   const currentPost = cocktailApi.slice(firstPostIndex, lastPostIndex);
-  console.log(cocktailApi.length);
 
   //set pagination
 

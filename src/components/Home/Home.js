@@ -1,5 +1,5 @@
 import React from "react";
-import Cocktails from "../Cocktails/Cocktails";
+import Slider from "../slider/Slider";
 import "./Home.css";
 
 const Home = () => {
@@ -16,7 +16,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Cocktails />
+      <Slider/>
+      
     </div>
   );
 };
