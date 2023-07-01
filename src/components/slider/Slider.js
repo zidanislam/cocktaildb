@@ -33,7 +33,24 @@ const Slider = () => {
   };
   return (
     <div>
-      <Carousel responsive={responsive} className="container">
+      <Carousel responsive={responsive}
+      additionalTransfrom={0}
+      arrows
+      autoPlaySpeed={3000}
+      centerMode={false}
+      className="my-5"
+      containerClass="container-with-dots"
+      dotListClass=""
+      draggable
+      focusOnSelect={false}
+      infinite
+      itemClass=""
+      keyBoardControl
+      minimumTouchDrag={80}
+      pauseOnHover
+      renderArrowsWhenDisabled={false}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}>
         {currentPost.map((cocktail) => (
           <SingleSlide key={cocktail.idDrink} cocktail={cocktail} />
         ))}
