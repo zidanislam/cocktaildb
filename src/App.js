@@ -25,7 +25,7 @@ function App() {
           path: "/items/:category",
           loader: async ({ params }) => {
             return fetch(
-              `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${params.Category}`
+              `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${params.category}`
             );
           },
           element: <Cocktails />,
