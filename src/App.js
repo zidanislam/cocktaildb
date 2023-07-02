@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import CocktailDetail from "./components/CocktailDetail/CocktailDetail";
 import Cocktails from "./components/Cocktails/Cocktails";
 import Home from "./components/Home/Home";
+import ItemCategories from "./components/ItemCategory/ItemCategory";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,10 +23,15 @@ function App() {
           element: <Home></Home>,
         },
         {
+          path: "/categories",
+          element: <ItemCategories></ItemCategories>,
+        },
+        {
           path: "/items/:category",
           loader: async ({ params }) => {
+            const textCategory = encodeURIComponent(params.category);
             return fetch(
-              `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${params.category}`
+              `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${textCategory}`
             );
           },
           element: <Cocktails />,

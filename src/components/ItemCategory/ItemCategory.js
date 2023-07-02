@@ -9,16 +9,17 @@ const ItemCategories = () => {
       .then((res) => res.json())
       .then((data) => setCategories(data.drinks));
   }, []);
+  const textCategories = categories.map((category)=>encodeURIComponent(category.strCategory))
   return (
-    <>
-      {categories.map((category) => (
-        <Card className="col-4 flex-fill" key={category.strCategory} style={{ width: "18rem" }} as={Link} to={`/items/${category.strCategory}`}>
+    <div className="d-flex flex-wrap container justify-content-center gap-3 mt-5">
+      {textCategories.map((category) =>(
+        <Card className="col-4 flex-fill" key={category} style={{ width: "18rem" }} as={Link} to={`/items/${category}`}>
           <Card.Body>
-            <Card.Title className="text-center">{category.strCategory}</Card.Title>
+            <Card.Title className="text-center">{decodeURIComponent(category)}</Card.Title>
           </Card.Body>
         </Card>
       ))}
-    </>
+    </div>
   );
 };
 

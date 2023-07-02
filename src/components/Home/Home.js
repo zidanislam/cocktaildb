@@ -14,9 +14,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex flex-wrap container justify-content-center gap-3 mt-5">
         <ItemCategory />
-      </div>
       <Slider />
     </div>
   );
