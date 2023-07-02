@@ -1,11 +1,9 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import ItemCategory from "../ItemCategory/ItemCategory";
 import Slider from "../slider/Slider";
 import "./Home.css";
 
-const Home = (cocktail) => {
-  const {strCategory} = cocktail
+const Home = () => {
   return (
     <div>
       <div className="hero d-block w-100" alt="hero">
@@ -16,21 +14,9 @@ const Home = (cocktail) => {
           </p>
         </div>
       </div>
-          <div className="d-flex align-items-center w-75">
-            <Col className="col-6 gx-5" >
-            <Row className="cat1 img my-4 d-flex flex-column justify-content-center align-items-start">
-              <h2 className="title">Cocktail</h2>
-            </Row>
-            <Row className="cat2 img my-4 d-flex flex-column justify-content-center align-items-start">
-            <h2 className=" title">Soda</h2>
-            </Row>
-            </Col>
-            <Col className="col-6 ms-5">
-            <Row className="cat3 img-single d-flex flex-column justify-content-center align-items-start" as={Link} to={`/items/${strCategory}`}>
-              <h2 className="title">Alcohol</h2>
-            </Row>
-            </Col>
-          </div>
+      <div className="d-flex flex-wrap container justify-content-center gap-3 mt-5">
+        <ItemCategory />
+      </div>
       <Slider />
     </div>
   );
