@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "location": "./../src/images/ordinary-drink.jpg"
+    },
+    {
+      "id": 2,
+      "location": "./../src/images/cocktail.jpg"
+    },
+    {
+      "id": 3,
+      "location": "./../src/images/shake.jpg"
+    },
+    {
+      "id": 4,
+      "location": "./../src/images/unknown.jpg"
+    },
+    {
+      "id": 5,
+      "location": "./../src/images/coca.jpg"
+    },
+    {
+      "id": 6,
+      "location": "./../src/images/shot.jpg"
+    },
+    {
+      "id": 7,
+      "location": "./../src/images/coffee-tea.jpg"
+    },
+    {
+      "id": 8,
+      "location": "./../src/images/homemade-liqueur.jpg"
+    },
+    {
+      "id": 9,
+      "location": "./../src/images/party-drink.jpg"
+    },
+    {
+      "id": 10,
+      "location": "./../src/images/beer.jpg"
+    },
+    {
+      "id": 11,
+      "location": "./../src/images/soft-drink.jpg"
+    }
+  ]
+}

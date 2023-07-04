@@ -11,15 +11,19 @@ const ItemCategories = () => {
   }, []);
   const textCategories = categories.map((category)=>encodeURIComponent(category.strCategory))
   return (
-    <div className="d-flex flex-wrap container justify-content-center gap-3 mt-5">
+    <>
+    <h2 className="text-center mt-4">Categories</h2>
+    <div className="d-flex flex-wrap container justify-content-center gap-3 mt-4">
       {textCategories.map((category) =>(
-        <Card className="col-4 flex-fill" key={category} style={{ width: "18rem" }} as={Link} to={`/items/${category}`}>
+        <Card className="col-4 category" key={category} style={{ width: "18rem"}} as={Link} to={`/items/${category}`}>
           <Card.Body>
             <Card.Title className="text-center">{decodeURIComponent(category)}</Card.Title>
           </Card.Body>
         </Card>
       ))}
     </div>
+    </>
+
   );
 };
 

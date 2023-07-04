@@ -13,13 +13,12 @@ const Cocktails = () => {
   const firstPostIndex = lastPostIndex - postInPage;
   const currentPost = items.slice(firstPostIndex, lastPostIndex);
 
-  //set pagination
 
   return (
     <>
       <div className="d-flex flex-column align-items-center py-5">
         <div className="mb-4">
-          <h2>See The Cocktail Collections</h2>
+          <h2></h2>
         </div>
         <div className="row container">
           {currentPost.map((cocktail) => (

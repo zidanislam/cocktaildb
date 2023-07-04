@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.category {
+  color: #532a3a;
+  text-decoration: none;
+  background-color: transparent;
+}
+.category:hover {
+  text-decoration: none;
+  color: #fbefd3;
+  background-color: #532a3a;
+}
