@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
 import { Link } from "react-router-dom";
 
 const ItemCategories = () => {
@@ -12,7 +13,9 @@ const ItemCategories = () => {
   const textCategories = categories.map((category)=>encodeURIComponent(category.strCategory))
   return (
     <>
+    
     <h2 className="text-center mt-4">Categories</h2>
+    <Fade top distance='20%' duration={1500}>
     <div className="d-flex flex-wrap container justify-content-center gap-3 mt-4">
       {textCategories.map((category) =>(
         <Card className="col-4 category" key={category} style={{ width: "18rem"}} as={Link} to={`/items/${category}`}>
@@ -22,6 +25,7 @@ const ItemCategories = () => {
         </Card>
       ))}
     </div>
+    </Fade>
     </>
 
   );
