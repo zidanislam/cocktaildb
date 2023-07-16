@@ -14,17 +14,15 @@ const CocktailDetail = () => {
     strInstructions,
   } = detail.drinks[0];
   return (
-    <div className="d-flex justify-content-evenly p-5">
-      <div>
-        <img src={strDrinkThumb} className="w-75" alt="" />
-      </div>
-      <div>
+    <div className="d-md-flex container justify-content-around p-5">
+        <img src={strDrinkThumb} className="img-fluid col-md-4" alt="" />
+      <div className="px-md-5 col-md-8 py-4">
         <h2>{strDrink}</h2>
         <p>Category:{strCategory}</p>
         <p>
           Items:{strIngredient1}, {strIngredient2}, {strIngredient3},{strGlass}
         </p>
-        <p>Descreaption: {strInstructions}</p>
+        <p>Description: {strInstructions}</p>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const ItemCategories = () => {
   }, []);
   const textCategories = categories.map((category)=>encodeURIComponent(category.strCategory))
   return (
-    <>
+    <div className="my-5">
     
     <h2 className="text-center mt-4">Categories</h2>
     <Fade top distance='20%' duration={1500}>
@@ -26,7 +26,7 @@ const ItemCategories = () => {
       ))}
     </div>
     </Fade>
-    </>
+    </div>
 
   );
 };
