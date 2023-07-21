@@ -18,9 +18,6 @@ const Cocktails = () => {
     <>
       <Fade top distance='20%' duration={1500}>
         <div className="d-flex flex-column align-items-center py-5">
-          <div className="mb-4">
-            <h2></h2>
-          </div>
           <div className="row container">
             {currentPost.map((cocktail) => (
               <Cocktail key={cocktail.idDrink} cocktail={cocktail}></Cocktail>
