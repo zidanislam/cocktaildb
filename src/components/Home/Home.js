@@ -4,7 +4,7 @@ import ItemCategory from "../ItemCategory/ItemCategory";
 import ContactUs from "../contact us/ContactUs";
 import IconBox from "../iconbox/IconBox";
 import Slider from "../slider/Slider";
-
+import "./home.css";
 const Home = () => {
   return (
     <div>

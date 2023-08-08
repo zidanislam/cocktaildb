@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "./../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -11,7 +10,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to={"/"}>
         <img
               alt=""
-              src={logo}
+              src="https://i.ibb.co/2kPwwdK/logo.png"
               width="75"
               height="75"
               className="d-inline-block align-top"

@@ -12,40 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.footer {
-  height: 30px;
-  background-color: #532a3a;
-  color: #fbefd3;
-  margin: 0px;
-  font-size: 14px;
-  text-align: center;
-}
 .about {
   text-align: center;
   color: #532a3a;
-}
-.hero {
-  background-image: url("./images/cocktail-banner.jpg");
-  background-size: cover;
-  min-height: 75vh;
-  position: relative;
-  color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.color-overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: 60vh;
-  }
-  h1 {
-    font-size: calc(1.525rem + 3.3vw);
-  }
 }
