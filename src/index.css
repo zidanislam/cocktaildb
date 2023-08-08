@@ -13,18 +13,6 @@ code {
     monospace;
 }
 
-.category {
-  color: #532a3a;
-  text-decoration: none;
-  background-color: transparent;
-  transition: all 0.3s ease-in;
-}
-.category:hover {
-  text-decoration: none;
-  color: #fbefd3;
-  background-color: #532a3a;
-  transform: scale(1.1);
-}
 .footer {
   height: 30px;
   background-color: #532a3a;
@@ -55,7 +43,7 @@ code {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 30vh;
+    min-height: 60vh;
   }
   h1 {
     font-size: calc(1.525rem + 3.3vw);

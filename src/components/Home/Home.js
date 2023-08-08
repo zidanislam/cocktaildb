@@ -1,7 +1,8 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import solo from "../../images/h3-banner04.jpg";
 import ItemCategory from "../ItemCategory/ItemCategory";
+import ContactUs from "../contact us/ContactUs";
+import IconBox from "../iconbox/IconBox";
 import Slider from "../slider/Slider";
 
 const Home = () => {
@@ -16,24 +17,32 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <IconBox />
       <Fade top distance="20%" duration={1500}>
-        <div className="d-md-flex container justify-content-center flex-row-reverse align-items-center my-5">
-          <img className="col-md-4 ml-2" src={solo} alt="" />
-          <div className="col-md-6 mx-md-5 my-sm-2 my-5 text-md-start text-center ">
-            <h2 className="my-md-4">
-              Unleash Your Inner Bartender with Our Cocktail Library
-            </h2>
-            <p>
-              Elevate your bartending skills with our ReactJS app! Explore a
-              vast collection of cocktails, discover new flavors, and impress
-              your guests with exciting recipes. Cheers to unforgettable
-              experiences!
-            </p>
+        <Slider />
+        <div className="container my-5">
+          <div className="row">
+            <img
+              className="col-md-5 ml-md-5 order-md-2"
+              src="https://i.ibb.co/Sr5V6gC/video-banner-01-1.png"
+              alt=""
+            />
+            <div className="col-md-7 my-md-auto order-md-1">
+              <h2 className="">
+                Unleash Your Inner Bartender with Our Cocktail Library
+              </h2>
+              <p>
+                Elevate your bartending skills with our ReactJS app! Explore a
+                vast collection of cocktails, discover new flavors, and impress
+                your guests with exciting recipes. Cheers to unforgettable
+                experiences!
+              </p>
+            </div>
           </div>
         </div>
         <ItemCategory />
-        <Slider />
       </Fade>
+      <ContactUs />
     </div>
   );
 };

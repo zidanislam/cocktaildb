@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 import { Link } from "react-router-dom";
+import "./item-category.css";
 
 const ItemCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -16,9 +17,9 @@ const ItemCategories = () => {
     
     <h2 className="text-center mt-4">Categories</h2>
     <Fade top distance='20%' duration={1500}>
-    <div className="d-flex flex-wrap container justify-content-center gap-3 mt-4">
+    <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
       {textCategories.map((category) =>(
-        <Card className="col-4 category" key={category} style={{ width: "18rem"}} as={Link} to={`/items/${category}`}>
+        <Card className="category" key={category} style={{ width: "18rem"}} as={Link} to={`/items/${category}`}>
           <Card.Body>
             <Card.Title className="text-center">{decodeURIComponent(category)}</Card.Title>
           </Card.Body>

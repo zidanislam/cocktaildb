@@ -1,0 +1,15 @@
+.contact-us {
+  background-color: #532a3a;
+  color: #fbefd3;
+}
+.contact-us button {
+  background-color: #fbefd3;
+  color: #532a3a;
+  border: 1px solid #fbefd3;
+  font-size: 22px;
+  padding: 0.5em 1em;
+  margin: 0;
+}
+.contact-us h4 {
+  text-decoration: underline;
+}

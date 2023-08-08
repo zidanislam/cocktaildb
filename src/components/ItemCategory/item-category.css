@@ -1,0 +1,33 @@
+.category {
+  color: #532a3a;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.category:hover {
+  text-decoration: none;
+  border-radius: 0;
+}
+.category::before {
+  content: "";
+  position: absolute;
+  inset: 0 8px;
+  border-left: 2px solid #532a3a;
+  border-right: 2px solid #532a3a;
+  transition: 1s;
+}
+.category::after {
+  content: "";
+  position: absolute;
+  inset: 8px 0;
+  border-top: 2px solid #532a3a;
+  border-bottom: 2px solid #532a3a;
+  transition: 1s;
+}
+.category:hover::before {
+  inset: 16px 8px;
+}
+.category:hover::after {
+  inset: 8px 16px;
+}
