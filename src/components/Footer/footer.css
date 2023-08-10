@@ -2,6 +2,10 @@
   background-color: #532a3a;
   color: #fbefd3;
   font-size: 14px;
+  overflow-x: hidden;
+}
+.inner {
+  overflow-x: hidden;
 }
 .subscribe {
   background-color: white;

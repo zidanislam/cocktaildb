@@ -3,21 +3,14 @@ import { Fade } from "react-reveal";
 import ItemCategory from "../ItemCategory/ItemCategory";
 import ContactUs from "../contact us/ContactUs";
 import Gallery from "../gallery/Gallery";
+import Hero from "../hero/Hero";
 import IconBox from "../iconbox/IconBox";
 import Slider from "../slider/Slider";
 import "./home.css";
 const Home = () => {
   return (
     <div>
-      <div className="hero d-block w-100" alt="hero">
-        <div className="color-overlay d-flex flex-column justify-content-center align-items-start ps-5">
-          <h2 className="fs-1">Welcom to Cocktail-DB</h2>
-          <p className="fs-5">
-            Search by Cocktail Category and get to know more about the
-            ingreditensts
-          </p>
-        </div>
-      </div>
+      <Hero/>
       <IconBox />
       <Fade top distance="20%" duration={1500}>
         <Slider />

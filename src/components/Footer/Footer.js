@@ -8,36 +8,41 @@ const Footer = () => {
   return (
     <>
       <div className="d-flex align-items-center mt-5 mb-3 w-75 m-auto subscribe">
-        <input className="flex-grow-1 w-50" type="email" placeholder="Enter Your Email..." />
-        <button  className="py-sm-2.5 px-sm-5 px-4 py-1.5">Subscribe</button>
+        <input
+          className="flex-grow-1 w-50"
+          type="email"
+          placeholder="Enter Your Email..."
+        />
+        <button className="py-sm-2.5 px-sm-5 px-4 py-1.5">Subscribe</button>
       </div>
       <div className="footer">
-        <div className="d-flex justify-content-between align-items-center ">
+        <div className="d-flex align-items-center justify-content-center">
           <img
             src="https://i.ibb.co/BrXxFDW/footer-logo.png"
             width="200"
             height="200"
-            className="ps-3 mb-5"
             alt=""
           />
-          <div className="d-flex gap-4 pe-5">
+        </div>
+        <div className="d-lg-flex justify-content-between d-sm-block inner">
+          <div className="d-flex gap-lg-5 gap-sm-3 ps-lg-5 my-lg-0 fs-5 fw-medium justify-content-lg-start justify-content-center my-3">
+            <p className="pb-0 mb-0">About Us</p>
+            <p className="pb-0 mb-0">Contact Us</p>
+            <p className="pb-0 mb-0">Cocktails</p>
+          </div>
+          <div className="d-flex justify-content-lg-end gap-4 pe-lg-5 justify-content-center">
             <FontAwesomeIcon icon={faWhatsapp} size="2xl" />
             <FontAwesomeIcon icon={faAt} size="2xl" />
             <FontAwesomeIcon icon={faInstagram} size="2xl" />
           </div>
         </div>
-        <div className=" d-flex justify-content-start gap-5 ps-5 fs-5 fw-medium">
-          <p className="pb-0 mb-0">About Us</p>
-          <p className="pb-0 mb-0">Contact Us</p>
-          <p className="pb-0 mb-0">Cocktails</p>
-        </div>
         <hr width="93%" className="mx-auto" />
         <div className="d-flex justify-content-between px-5">
           <div className="d-flex gap-5">
-            <p className="">Term & Conditions</p>
-            <p className="">Privecy Policy</p>
+            <p>Term & Conditions</p>
+            <p>Privecy Policy</p>
           </div>
-          <p className="">Made By Zidan Islam 2023</p>
+          <p>Made By Zidan Islam 2023</p>
         </div>
       </div>
     </>

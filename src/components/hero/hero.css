@@ -1,0 +1,34 @@
+.img {
+  height: 500px;
+  width: 100vw;
+}
+.cap {
+  top: 35%;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.slide1 {
+  left: 45%;
+}
+.slide3 {
+  right: 40%;
+}
+@media (max-width: 425px) {
+  .cap {
+    top: 25%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .slide1 {
+    left: 15%;
+  }
+  .slide3 {
+    right: 15%;
+  }
+  .img {
+    height: 300px;
+    width: 100vw;
+  }
+}
