@@ -4,9 +4,6 @@
   font-size: 14px;
   overflow-x: hidden;
 }
-.inner {
-  overflow-x: hidden;
-}
 .subscribe {
   background-color: white;
   border-radius: 50px;

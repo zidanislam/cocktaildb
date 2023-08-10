@@ -25,7 +25,7 @@ const Footer = () => {
           />
         </div>
         <div className="d-lg-flex justify-content-between d-sm-block inner">
-          <div className="d-flex gap-lg-5 gap-sm-3 ps-lg-5 my-lg-0 fs-5 fw-medium justify-content-lg-start justify-content-center my-3">
+          <div className="d-flex gap-md-5 gap-3 ps-lg-5 my-lg-0 fs-5 fw-medium justify-content-lg-start justify-content-center my-3">
             <p className="pb-0 mb-0">About Us</p>
             <p className="pb-0 mb-0">Contact Us</p>
             <p className="pb-0 mb-0">Cocktails</p>
@@ -37,8 +37,8 @@ const Footer = () => {
           </div>
         </div>
         <hr width="93%" className="mx-auto" />
-        <div className="d-flex justify-content-between px-5">
-          <div className="d-flex gap-5">
+        <div className="d-flex justify-content-between px-md-5 px-2 gap-1">
+          <div className="d-flex gap-lg-3 gap-5">
             <p>Term & Conditions</p>
             <p>Privecy Policy</p>
           </div>
