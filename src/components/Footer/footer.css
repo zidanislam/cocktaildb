@@ -3,3 +3,25 @@
   color: #fbefd3;
   font-size: 14px;
 }
+.subscribe {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: #532a3a 6px 6px 1px;
+}
+.subscribe input {
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding: 20px;
+}
+.subscribe button {
+  padding: 10px 50px;
+  background-color: #532a3a;
+  border: none;
+  border-radius: 50px;
+  color: #fbefd3;
+}
+.subscribe input:focus {
+  outline: none !important;
+}

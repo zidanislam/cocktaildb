@@ -15,19 +15,23 @@ const Slider = () => {
   const currentPost = cocktailApi.slice(firstPostIndex, lastPostIndex);
   const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      breakpoint: { max: 2560, min: 1441 },
+      items: 6,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      breakpoint: { max: 1440, min: 1025 },
+      items: 5,
+    },
+    laptop: {
+      breakpoint: { max: 1024, min: 769 },
+      items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      breakpoint: { max: 768, min: 426 },
+      items: 3,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 425, min: 0 },
       items: 1,
     },
   };

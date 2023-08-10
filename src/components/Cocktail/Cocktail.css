@@ -2,13 +2,12 @@
   background-color: #fbefd3;
 }
 .button {
-  background-color: #fbefd3;
-  border-color: #532a3a;
-  color: #532a3a;
+  padding: 0.5em 1em;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #532a3a !important;
-  border-color: #532a3a !important;
+  background-color: transparent !important;
+  border: none;
+  color: #532a3a;
 }

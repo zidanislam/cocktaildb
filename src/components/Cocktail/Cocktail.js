@@ -1,26 +1,33 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Cocktail.css";
 
 const Cocktail = (cocktail) => {
   const { idDrink, strDrink, strDrinkThumb } = cocktail.cocktail;
+  console.log(idDrink)
 
   return (
-    <div className="container col-6 col-sm-6 col-md-4 col-xl-3 gy-3 d-flex justify-content-center">
-      <Card className="shadow-sm product" style={{ width: "17rem" }}>
-        <Card.Img
-          className="p-2 rounded-4 rounded-bottom-0"
+    <div className="container col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 text-center gy-3">
+      <div className="product  mx-auto" style={{ width: "17rem" }}>
+        <img
+          className="p-2 rounded-4"
+          width="100%"
+          height="100%"
           variant="top"
+          alt=""
           src={strDrinkThumb}
         />
-        <Card.Body>
-          <Card.Title>{strDrink}</Card.Title>
-          <Button className=" button" as={Link} to={`/item/${idDrink}`}>
+        <div>
+          <h6>{strDrink}</h6>
+          <p>
+            <small>Id: {idDrink}</small>
+          </p>
+          <Button className="fs-5 button position-relative category" as={Link} to={`/item/${idDrink}`}>
             See Recipe
           </Button>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 };

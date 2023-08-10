@@ -10,7 +10,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to={"/"}>
         <img
               alt=""
-              src="https://i.ibb.co/2kPwwdK/logo.png"
+              src="https://i.ibb.co/wp4qd1g/logo.png"
               width="75"
               height="75"
               className="d-inline-block align-top"

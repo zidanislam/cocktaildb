@@ -1,27 +1,30 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const SingleSlide = (cocktail) => {
-  const { idDrink, strDrink, strDrinkThumb, strInstructions } =
+  const { idDrink, strDrink, strDrinkThumb} =
     cocktail.cocktail;
   return (
-    <div className="d-flex justify-content-center">
-      <Card className="shadow-sm product" style={{ width: "17rem" }}>
-        <Card.Img
-          className="p-2 rounded-4 rounded-bottom-0"
+      <div className="product text-center m-auto" style={{ width: "17rem" }}>
+      <img
+          className="p-2 rounded-4"
+          width="90%"
+          height="100%"
           variant="top"
+          alt=""
           src={strDrinkThumb}
         />
-        <Card.Body>
-          <Card.Title>{strDrink}</Card.Title>
-          <Card.Text>{strInstructions.substring(0, 50)}</Card.Text>
-          <Button className=" button" as={Link} to={`/item/${idDrink}`}>
-            See Full Recepe
+        <div>
+          <h6>{strDrink}</h6>
+          <p>
+            <small>Id: {idDrink}</small>
+          </p>
+          <Button className="fs-5 button position-relative category" as={Link} to={`/item/${idDrink}`}>
+            See Recipe
           </Button>
-        </Card.Body>
-      </Card>
-    </div>
+      </div>
+      </div>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import ItemCategory from "../ItemCategory/ItemCategory";
 import ContactUs from "../contact us/ContactUs";
+import Gallery from "../gallery/Gallery";
 import IconBox from "../iconbox/IconBox";
 import Slider from "../slider/Slider";
 import "./home.css";
@@ -43,6 +44,7 @@ const Home = () => {
         <ItemCategory />
       </Fade>
       <ContactUs />
+      <Gallery/>
     </div>
   );
 };
